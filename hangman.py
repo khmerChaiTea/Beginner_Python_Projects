@@ -1,3 +1,5 @@
+# 12 Beginner Python Projects with https://www.youtube.com/watch?v=8ext9G7xspg&ab_channel=freeCodeCamp.org
+
 import random
 from words import words
 import string
