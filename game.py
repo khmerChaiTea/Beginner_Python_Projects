@@ -121,19 +121,8 @@ def play(game, x_player, o_player, print_game=True):
         print('It\'s a tie!')
             
 if __name__ == '__main__':
-    x_win = 0
-    o_win = 0
-    ties = 0
-    for _ in range(3):
-        x_player = RandomComputerPlayer('X') # Example: HumanPlayer or any other player class
-        o_player = GeniusComputerPlayer('O')    # Example: RandomComputerPlayer or any other player class
-        t = TicTacToe() # t is an instance of TicTacToe
-        result = play(t, x_player, o_player, print_game= False)   # Start the game
-        if result == 'X':
-            x_win += 1
-        elif result == 'O':
-            o_win += 1
-        else:
-            ties += 1
-            
-    print(f'After 3 iterations, we see {x_win} X wins, {o_win} O wins, and {ties} ties')
+
+    x_player = HumanPlayer('X') # Example: HumanPlayer or any other player class
+    o_player = GeniusComputerPlayer('O')    # Example: RandomComputerPlayer or any other player class
+    t = TicTacToe() # t is an instance of TicTacToe
+    play(t, x_player, o_player, print_game= True)   # Start the game
